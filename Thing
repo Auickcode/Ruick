@@ -1,0 +1,74 @@
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local UI = Material.Load({
+     Title = "Ruick",
+     Style = 3,
+     SizeX = 600,
+     SizeY = 260,
+     Theme = "Light"
+})
+
+-- Pages --
+
+local Page = UI.New({
+    Title = "Main"
+})
+
+local Page2 = UI.New({
+    Title = "Visuals"
+})
+
+local Page3 = UI.New({
+    Title = "Settings"
+})
+
+-- Main page --
+
+local AimbotToggle = Page.Toggle({
+    Text = "Aimbot",
+    Callback = function(Value)
+        print(Value)
+    end,
+    Enabled = false
+})
+
+local SilentaimToggle = Page.Toggle({
+    Text = "Silent aim",
+    Callback = function(Value)
+        print(Value)
+    end,
+    Enabled = false
+})
+
+local FOVSLIDE = Page.Slider({
+    Text = "Fov",
+    Callback = function(Value)
+        print(Value)
+    end,
+    Min = 0,
+    Max = 400,
+    Def = 0
+})
+
+
+-- Visuals page --
+
+local BoxEspToggle = Page2.Toggle({
+    Text = "Box ESP",
+    Callback = function(Value)
+        print(Value)
+    end,
+    Enabled = false
+})
+
+local TracersEspToggle = Page2.Toggle({
+    Text = "Tracers",
+    Callback = function(Value)
+        print(Value)
+    end,
+    Enabled = false
+})
+
+-- Settings page --
+
+
