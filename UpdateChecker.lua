@@ -1,1 +1,1 @@
-local version = {"V1"}
+local version = {"V2"}
