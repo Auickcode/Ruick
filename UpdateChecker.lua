@@ -1,4 +1,4 @@
-local function newVersion()
+function newVersion()
   if version ~= "V2" then
     print("updated")
     end
