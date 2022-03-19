@@ -3,7 +3,7 @@ local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinl
 local UI = Material.Load({
      Title = "Ruick",
      Style = 3,
-     SizeX = 600,
+     SizeX = 450,
      SizeY = 260,
      Theme = "Light"
 })
